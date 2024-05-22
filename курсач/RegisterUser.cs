@@ -80,7 +80,7 @@ namespace курсач
             try
             {
                 int newUserId = RegistersUser(name, email, password);
-                MessageBox.Show($"Регистрация успешна!");
+                MessageBox.Show($"Региcтрация успешна!");
                 this.Close();
             }
             catch (InvalidOperationException ex)
@@ -94,7 +94,7 @@ namespace курсач
         {
             if (!IsEmailUnique(email))
             {
-                throw new InvalidOperationException("Email уже используется. Пожалуйста, используйте другой email.");
+                throw new InvalidOperationException("Email уже иcпользуется. Пожалуйста, используйте другой email.");
             }
 
             int Id = GetLastUserId() + 1;
